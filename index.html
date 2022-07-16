@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="/dist/style.css">
+
   <title>Frontend Mentor | Room homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -20,10 +22,47 @@
   </style>
 </head>
 <body>
-  Home
-  Shop
-  About
-  Contact
+
+  <header class="header">
+    <div class="overlay has-fade"></div>
+
+    <nav class="navigation container">
+
+      <a id="jsbtnHamburgur" class="header__toggle hide-for-desktop" href="#" aria-label="Mobile menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+      <a href="#" class="header__logo" aria-label="Header logo">
+          <img src="images/logo.svg" alt="Room logo">
+      </a>
+
+      <!-- Desktop menu -->
+      <div class="header__links hide-for-mobile">
+        <ul>
+          <li><a href="#" aria-label="Home" >Home</a></li>
+          <li><a href="#" aria-label="Home">Shop</a></li>
+          <li><a href="#" aria-label="About">About</a></li>
+          <li><a href="#" aria-label="Contact">Contact</a></li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="header__menu has-fade hide-for-desktop">
+      <ul>
+        <li><a href="#" aria-label="Home" >Home</a></li>
+        <li><a href="#" aria-label="Home">Shop</a></li>
+        <li><a href="#" aria-label="About">About</a></li>
+        <li><a href="#" aria-label="Contact">Contact</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+
 
   Discover innovative ways to decorate
 
@@ -60,5 +99,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="/app/js/script.js"></script>
+
 </body>
 </html>
