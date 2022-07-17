@@ -5,6 +5,7 @@ h2,
 h3 {
   margin-top: 0;
   line-height: 1.1;
+  color: var(--black);
 }
 
 h1 {
@@ -18,11 +19,15 @@ h1 {
 h2 {
   font-size: rem(24);
   margin-bottom: rem(24);
-  color: var(--text-color2);
 }
 
 a,
 a:visited,
 a:active {
   text-decoration: none;
+}
+
+p {
+  color: var(--darkgray);
+  line-height: 1.4;
 }

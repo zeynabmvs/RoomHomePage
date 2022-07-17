@@ -1,0 +1,71 @@
+@use '../util' as *;
+
+.slider {
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+    grid-template-columns: 1fr;
+
+    @include breakpoint(medium) {
+        grid-template-rows: 1fr;
+        grid-template-columns: 3fr 2fr;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__caption {
+
+        &__wrapper {
+            padding: rem(30);
+            flex-direction: column;
+            gap: 2rem;
+
+            h1 {
+
+            }
+    
+            p {
+                
+            }
+
+            a {
+                text-transform: uppercase;
+                letter-spacing: rem(12);
+                color: var(--black);
+                text-decoration: none;
+                transition: color 150ms ease-in-out;
+
+                svg path{
+                    transition: fill 150ms ease-in-out;
+                }
+
+                &:hover {
+                    color: var(--darkgray);
+
+                    svg path{
+                        fill: var(--darkgray);
+                    }
+                }
+            }
+        }
+    }
+
+    &__buttons {
+        float: left;
+        
+        button {
+            background-color: var(--black);
+            border: none;
+            width: rem(80);
+            height: rem(78);
+
+            &:hover {
+                background-color: var(--darkgray);
+                cursor: pointer;
+            }
+        }
+    }
+}

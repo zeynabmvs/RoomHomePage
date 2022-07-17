@@ -31,3 +31,10 @@ btnHamburgur.addEventListener('click', function(){
         });
     } 
 })
+
+// Owl Carousel
+jQuery(document).ready(function($) {
+    $('.owl-carousel').owlCarousel({
+        loop:true
+    });
+});

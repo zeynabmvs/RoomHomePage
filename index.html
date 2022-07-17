@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="/app/lib/owl.carousel.min.css">
+  <link rel="stylesheet" href="/app/lib/owl.theme.default.min.css">
+
+  <!-- Project styles -->
   <link rel="stylesheet" href="/dist/style.css">
 
   <title>Frontend Mentor | Room homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
   <header class="header">
@@ -35,13 +49,13 @@
       </a>
 
       <a href="#" class="header__logo" aria-label="Header logo">
-          <img src="images/logo.svg" alt="Room logo">
+        <img src="images/logo.svg" alt="Room logo">
       </a>
 
       <!-- Desktop menu -->
       <div class="header__links hide-for-mobile">
         <ul>
-          <li><a href="#" aria-label="Home" >Home</a></li>
+          <li><a href="#" aria-label="Home">Home</a></li>
           <li><a href="#" aria-label="Home">Shop</a></li>
           <li><a href="#" aria-label="About">About</a></li>
           <li><a href="#" aria-label="Contact">Contact</a></li>
@@ -53,7 +67,7 @@
     <!-- Mobile menu -->
     <div class="header__menu has-fade hide-for-desktop">
       <ul>
-        <li><a href="#" aria-label="Home" >Home</a></li>
+        <li><a href="#" aria-label="Home">Home</a></li>
         <li><a href="#" aria-label="Home">Shop</a></li>
         <li><a href="#" aria-label="About">About</a></li>
         <li><a href="#" aria-label="Contact">Contact</a></li>
@@ -61,6 +75,46 @@
     </div>
 
   </header>
+
+  <div class="owl-carousel owl-theme" style="background-color: red;">
+    <div>First lider</div>
+    <div>Second lider</div>
+    <div>Third lider</div>
+    <div>Forth lider</div>
+    <div>Fifth lider</div>
+    <div>Sixth lider</div>
+  </div>
+
+  <section class="slider">
+
+    <img class="slider__image" src="/images/desktop-image-hero-1.jpg" alt="Slider Image 1">
+
+    <div>
+
+      <div class="slider__caption">
+        <div class="flex slider__caption__wrapper">
+          <h1>Discover innovative ways to decorate</h1>
+          <p>We provide unmatched quality, comfort, and style for property owners across the country.
+            Our experts combine form and function in bringing your vision to life. Create a room in your
+            own style with our collection and make your property a reflection of you and what you love.</p>
+          <a href="#">Shop now
+            <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                fill="#000" fill-rule="nonzero" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="slider__buttons">
+        <button class="btn-left"><img src="images/icon-angle-left.svg"></button>
+        <button class="btn-right"><img src="images/icon-angle-right.svg"></button>
+      </div>
+
+    </div>
+
+  </section>
 
   <section class="about">
     <img src="/images/image-about-dark.jpg" alt="About image">
@@ -75,39 +129,40 @@
   </section>
 
 
-  Discover innovative ways to decorate
 
-  We provide unmatched quality, comfort, and style for property owners across the country. 
-  Our experts combine form and function in bringing your vision to life. Create a room in your 
-  own style with our collection and make your property a reflection of you and what you love.
 
-  Shop now
+
+
+
 
   We are available all across the globe
 
-  With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+  With stores all over the world, it's easy for you to find furniture for your home or place of business.
+  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
   store locator. Any questions? Don't hesitate to contact us today.
 
   Shop now
 
   Manufactured with the best materials
 
-  Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
-  to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+  Our modern furniture store provide a high level of quality. Our company has invested in advanced technology
+  to ensure that every product is made as perfect and as consistent as possible. With three decades of
   experience in this industry, we understand what customers want for their home and office.
 
   Shop now
 
-  
 
-  
-  
+
+
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="/app/js/jquery-3.6.0.min.js"></script>
+  <script src="/app/js/owl.carousel.min.js"></script>
   <script src="/app/js/script.js"></script>
 
 </body>
+
 </html>
