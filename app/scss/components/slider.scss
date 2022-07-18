@@ -1,7 +1,7 @@
 @use '../util' as *;
 
 .slider {
-    height: 800px;
+    position: relative;
 
     &_item {
         display: grid;
@@ -57,10 +57,18 @@
 
 // Ovrwrite owl carousel styles
 .owl-theme .owl-nav {
-    float: left;
+    position: absolute;
     margin: 0;
     padding: 0;
     border-radius: 0;
+    right: 0;
+    bottom: 40%;
+
+    @include breakpoint(medium) {
+        bottom: 0;
+        left: 60%;
+        right: unset;
+    }
 }
 
 .owl-theme .owl-nav [class*=owl-] {
