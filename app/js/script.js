@@ -35,6 +35,17 @@ btnHamburgur.addEventListener('click', function(){
 // Owl Carousel
 jQuery(document).ready(function($) {
     $('.owl-carousel').owlCarousel({
-        loop:true
+        loop:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            }
+        },
+        dots:false,
+        navText: ["<img src='images/icon-angle-left.svg'>","<img src='images/icon-angle-right.svg'>"],
+        smartSpeed: 1000,
+
     });
 });
