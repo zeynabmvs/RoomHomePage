@@ -5,7 +5,6 @@ const btnHamburgur = document.querySelector('#jsbtnHamburgur')
 const header = document.querySelector('.header')
 const fadeElems = document.querySelectorAll('.has-fade')
 const body = document.querySelector('body')
-const overlay = document.querySelector('.overlay')
 const logo = document.querySelector('.header__logo')
 
 btnHamburgur.addEventListener('click', function(){ 

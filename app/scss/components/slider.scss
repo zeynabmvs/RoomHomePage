@@ -1,5 +1,7 @@
 @use '../util' as *;
 
+
+
 .slider {
     position: relative;
 
@@ -20,6 +22,7 @@
         }
 
         .caption {
+            padding: rem(50) rem(30);
 
             .wrapper {
                 padding: rem(30);
